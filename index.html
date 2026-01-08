@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <!-- Configuração de caracteres para português -->
   <meta charset="UTF-8">
+
+  <!-- Título exibido na aba do navegador -->
   <title>Licóli Santos | Blog Pessoal</title>
+
+  <!-- Importação do arquivo CSS externo -->
+  <!-- O CSS deve estar na pasta /css -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+  <!-- Cabeçalho principal do site -->
   <header>
     <h1>Licóli Santos</h1>
     <p>Full Stack Developer em transição de carreira</p>
-    <link rel="stylesheet" href="css/style.css">
   </header>
 
+  <!-- Menu de navegação -->
   <nav>
     <a href="index.html">Início</a> |
     <a href="sobre.html">Sobre mim</a>
   </nav>
 
+  <!-- Conteúdo principal da página -->
   <main>
+
+    <!-- Seção de apresentação -->
     <section>
-      <h2>👋 Bem-vindo ao meu blog pessoal</h2>
+      <h2>Bem-vindo ao meu blog pessoal</h2>
 
       <p>
         Este espaço foi criado para compartilhar minha trajetória profissional,
@@ -33,25 +45,46 @@
       </p>
 
       <p>
-        Aqui, futuramente, você também vai encontrar conteúdos técnicos,
-        projetos, estudos e postagens com a minha mascote: a capivara Acolly 🐹💙
+        Aqui, futuramente, você também encontrará conteúdos técnicos,
+        projetos, estudos e publicações relacionadas ao meu desenvolvimento
+        profissional na área de tecnologia.
       </p>
     </section>
 
-    <section>
-      <h2>🚀 Tecnologias em estudo</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>NestJS</li>
-        <li>SQL</li>
-      </ul>
+    <!-- Seção de tecnologias com layout em duas colunas -->
+    <section class="tech-section">
+      <h2>Tecnologias em estudo</h2>
+
+      <!-- Container que organiza lista e imagem lado a lado -->
+      <div class="tech-content">
+
+        <!-- Coluna esquerda: lista de tecnologias -->
+        <div class="tech-list">
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>NestJS</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <!-- Coluna direita: imagem -->
+        <!-- A imagem deve estar na pasta /img -->
+        <div class="tech-image">
+          <img
+            src="img/acolly-tech.png"
+            alt="Mascote Acolly em ambiente de tecnologia">
+        </div>
+
+      </div>
     </section>
+
   </main>
 
+  <!-- Rodapé do site -->
   <footer>
     <p>© 2026 - Licóli Santos</p>
   </footer>
