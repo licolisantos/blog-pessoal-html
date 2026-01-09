@@ -91,6 +91,31 @@ footer {
   transition: background-color 0.3s ease;
 }
 
+/* LinkedIn */
+.linkedin {
+  background-color: #0a66c2;
+}
+
+/* GitHub */
+.github {
+  background-color: #24292e;
+}
+
+/* WhatsApp */
+.whatsapp {
+  background-color: #25d366;
+}
+
+/* Gmail */
+.gmail {
+  background-color: #ea4335;
+}
+
+/* Hover padrão */
+.contato-btn:hover {
+  opacity: 0.85;
+}
+
 /* Efeito hover dos botões */
 .contato-btn:hover {
   background-color: #004182;
