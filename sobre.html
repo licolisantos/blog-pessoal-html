@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <!-- Configuração de caracteres para português -->
   <meta charset="UTF-8">
 
   <!-- Título exibido na aba do navegador -->
@@ -9,141 +10,108 @@
   <!-- Importação do arquivo CSS externo -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <!-- Cabeçalho da página -->
+  <!-- ============================================
+       CABEÇALHO
+       ============================================ -->
   <header>
     <h1>Sobre mim</h1>
-    <p>Conheça minha trajetória profissional</p>
+    <p>Minha trajetória profissional</p>
   </header>
 
-  <!-- Menu de navegação -->
+  <!-- ============================================
+       MENU DE NAVEGAÇÃO
+       ============================================ -->
   <nav>
     <a href="index.html">Início</a> |
     <a href="sobre.html">Sobre mim</a>
   </nav>
 
-  <!-- Conteúdo principal da página -->
+  <!-- ============================================
+       CONTEÚDO PRINCIPAL
+       ============================================ -->
   <main>
 
-    <!-- Container visual externo
-         Responsável pelo fundo rosado e largura geral
-         Mesmo padrão utilizado na Home -->
-    <div class="home-container">
+    <!-- ============================================
+         SEÇÃO: QUEM SOU EU (COM FOTO)
+         ============================================ -->
+    <section class="sobre-perfil">
 
-      <!-- Container interno
-           Responsável pelos cards brancos -->
-      <div class="container">
-
-        <!-- Seção: Quem sou eu -->
-        <section>
-          <h2>Quem sou eu</h2>
-
-          <p>
-            Sou uma profissional com mais de 10 anos de experiência em atendimento ao cliente,
-            análise de processos e gestão de performance, atualmente em transição de carreira
-            para a área de tecnologia e desenvolvimento web.
-          </p>
-
-          <p>
-            Em 2025, iniciei minha formação em Desenvolvimento Full Stack JavaScript pela
-            Generation Brasil, um programa intensivo que une hard skills e soft skills
-            para a formação de profissionais preparados para o mercado.
-          </p>
-        </section>
-
-        <!-- Seção: Experiência profissional -->
-        <section>
-          <h2>Experiência profissional</h2>
-
-          <p>
-            Atuei em empresas como Integralmedica Suplementos Nutricionais, Atento Brasil,
-            AeC e Prefeitura Municipal de Embu-Guaçu, desenvolvendo habilidades em:
-          </p>
-
-          <ul>
-            <li>Atendimento multicanal (chat, e-mail, telefone e WhatsApp)</li>
-            <li>Análise de indicadores (NPS, CSAT, SLA e FCR)</li>
-            <li>Criação de relatórios e dashboards em Excel e Power BI</li>
-            <li>Otimização de processos e experiência do cliente</li>
-            <li>Treinamento e apoio a equipes</li>
-          </ul>
-        </section>
-
-        <!-- Seção: Objetivo profissional -->
-        <section>
-          <h2>Objetivo profissional</h2>
-
-          <p>
-            Atualmente, estou expandindo minhas competências para a área de tecnologia,
-            com foco em JavaScript, HTML, CSS, React, Node.js e Banco de Dados.
-          </p>
-
-          <p>
-            Busco unir minha experiência analítica e visão de negócio ao desenvolvimento
-            de soluções digitais que gerem impacto real.
-          </p>
-
-          <p>
-            Acredito na tecnologia com propósito, na aprendizagem contínua
-            e na colaboração como pilares do crescimento profissional.
-          </p>
-        </section>
-
-        <!-- Seção: Contato -->
-        <section>
-          <h2>Contato</h2>
-
-          <p>
-            Você pode entrar em contato comigo pelos canais abaixo:
-          </p>
-
-          <!-- Botões de contato -->
-          <div class="contato-links">
-
-            <a
-              href="https://www.linkedin.com/in/licoli-santos/"
-              target="_blank"
-              class="contato-btn linkedin"
-            >
-              LinkedIn
-            </a>
-
-            <a
-              href="https://github.com/licolisantos"
-              target="_blank"
-              class="contato-btn github"
-            >
-              GitHub
-            </a>
-
-            <a
-              href="https://wa.me/5511999001636"
-              target="_blank"
-              class="contato-btn whatsapp"
-            >
-              WhatsApp
-            </a>
-
-            <a
-              href="mailto:joaogabriellicoli@gmail.com"
-              class="contato-btn email"
-            >
-              E-mail
-            </a>
-
-          </div>
-        </section>
-
+      <!-- Foto de perfil -->
+      <div class="perfil-foto">
+        <img
+          src="img/licoli.png"
+          alt="Foto de Licóli Santos">
       </div>
-      <!-- Fim do container interno -->
 
-    </div>
-    <!-- Fim do container visual -->
+      <!-- Texto do perfil -->
+      <div class="perfil-texto">
+        <h2>Quem sou eu</h2>
+
+        <p>
+          Sou uma profissional com mais de 10 anos de experiência em atendimento ao cliente,
+          análise de processos e gestão de performance, atualmente em transição de carreira
+          para a área de tecnologia e desenvolvimento web.
+        </p>
+
+        <p>
+          Em 2025, iniciei minha formação em Desenvolvimento Full Stack JavaScript pela
+          Generation Brasil, um programa intensivo que une hard skills e soft skills
+          para a formação de profissionais preparados para o mercado.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- ============================================
+         SEÇÃO: EXPERIÊNCIA PROFISSIONAL
+         ============================================ -->
+    <section>
+      <h2>Experiência profissional</h2>
+
+      <p>
+        Atuei em empresas como Integralmedica Suplementos Nutricionais, Atento Brasil,
+        AeC e Prefeitura Municipal de Embu-Guaçu, desenvolvendo habilidades em:
+      </p>
+
+      <ul>
+        <li>Atendimento multicanal (chat, e-mail, telefone e WhatsApp)</li>
+        <li>Análise de indicadores (NPS, CSAT, SLA e FCR)</li>
+        <li>Criação de relatórios e dashboards em Excel e Power BI</li>
+        <li>Otimização de processos e experiência do cliente</li>
+        <li>Treinamento e apoio a equipes</li>
+      </ul>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO: OBJETIVO PROFISSIONAL
+         ============================================ -->
+    <section>
+      <h2>Objetivo profissional</h2>
+
+      <p>
+        Atualmente, estou expandindo minhas competências para a área de tecnologia,
+        com foco em JavaScript, HTML, CSS, React, Node.js e Banco de Dados.
+      </p>
+
+      <p>
+        Busco unir minha experiência analítica e visão de negócio ao desenvolvimento
+        de soluções digitais que gerem impacto real.
+      </p>
+
+      <p>
+        Acredito na tecnologia com propósito, na aprendizagem contínua
+        e na colaboração como pilares do crescimento profissional.
+      </p>
+    </section>
 
   </main>
 
-  <!-- Rodapé -->
+  <!-- ============================================
+       RODAPÉ
+       ============================================ -->
   <footer>
     <p>© 2026 - Licóli Santos | Blog Pessoal</p>
   </footer>

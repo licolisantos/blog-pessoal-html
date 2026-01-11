@@ -200,3 +200,41 @@ footer {
   margin-top: 30px;
   font-size: 0.9rem;
 }
+/* ================================
+   SOBRE - PERFIL COM FOTO
+   ================================ */
+
+/* Container da seção com foto e texto */
+.sobre-perfil {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Foto do perfil */
+.perfil-foto img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  /* Borda seguindo o padrão rosa dos cards */
+  border: 4px solid #e8a0bf;
+}
+
+/* Texto do perfil */
+.perfil-texto {
+  flex: 1;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 600px) {
+  .sobre-perfil {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .perfil-foto img {
+    margin-bottom: 10px;
+  }
+}
