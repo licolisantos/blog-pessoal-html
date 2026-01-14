@@ -176,6 +176,22 @@ li {
 }
 
 /* ================================
+   BOTÃO "DEIXE SUA MENSAGEM"
+   Estilo neutro e destaque principal
+   ================================ */
+.btn-mensagem {
+  background-color: #6b7280; /* cinza médio sólido */
+  color: #ffffff;
+  margin-bottom: 15px;
+  opacity: 1;
+}
+
+.btn-mensagem:hover {
+  background-color: #4b5563; /* cinza mais escuro no hover */
+}
+
+
+/* ================================
    SOBRE - PERFIL COM FOTO
    ================================ */
 .sobre-perfil {
