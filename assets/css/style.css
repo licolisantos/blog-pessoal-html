@@ -89,8 +89,6 @@ section h2 {
    SEÇÃO TECNOLOGIAS
    Layout lado a lado
    ================================ */
-
-/* Container principal */
 .tech-content {
   display: flex;
   align-items: center;
@@ -98,12 +96,10 @@ section h2 {
   gap: 20px;
 }
 
-/* Coluna esquerda */
 .tech-list {
   flex: 1;
 }
 
-/* Lista de tecnologias */
 .tech-list ul {
   margin-left: 20px;
 }
@@ -114,18 +110,14 @@ section h2 {
   font-weight: bold;
 }
 
-/* Coluna direita */
 .tech-image {
   flex: 1;
   text-align: right;
 }
 
-/* Imagem do mascote */
 .tech-image img {
   max-width: 250px;
   width: 100%;
-
-  /* tom marrom presente na borda */
   border: 4px solid #8b5e3c;
   border-radius: 10px;
 }
@@ -144,8 +136,6 @@ li {
 /* ================================
    BOTÕES DE CONTATO
    ================================ */
-
-/* Container dos botões */
 .contato-links {
   display: flex;
   flex-wrap: wrap;
@@ -153,40 +143,160 @@ li {
   margin-top: 10px;
 }
 
-/* Estilo base dos botões */
 .contato-btn {
   padding: 10px 14px;
   border-radius: 6px;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
   color: #ffffff;
   font-weight: bold;
   font-size: 0.95rem;
   transition: opacity 0.3s ease;
 }
 
-/* LinkedIn */
+.contato-btn:hover {
+  opacity: 0.85;
+}
+
 .contato-btn.linkedin {
   background-color: #0a66c2;
 }
 
-/* GitHub */
 .contato-btn.github {
   background-color: #24292e;
 }
 
-/* WhatsApp */
 .contato-btn.whatsapp {
   background-color: #25d366;
 }
 
-/* E-mail */
 .contato-btn.email {
   background-color: #ea4335;
 }
 
-/* Hover padrão */
-.contato-btn:hover {
-  opacity: 0.85;
+/* ================================
+   SOBRE - PERFIL COM FOTO
+   ================================ */
+.sobre-perfil {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.perfil-foto img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #e8a0bf;
+}
+
+.perfil-texto {
+  flex: 1;
+}
+
+/* ================================
+   MODAL - FORMULÁRIO DE CONTATO
+   ================================ */
+
+/* Overlay escuro */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Caixa do modal */
+.modal {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+/* Botão fechar */
+.fechar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Conteúdo do modal */
+.modal-conteudo {
+  display: flex;
+  gap: 20px;
+}
+
+/* Formulário */
+.modal-form {
+  flex: 1;
+}
+
+.modal-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.modal-form input,
+.modal-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Mapa */
+.modal-mapa {
+  flex: 1;
+}
+
+.modal-mapa iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 8px;
+}
+
+.endereco {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #1f3a5f;
+}
+
+/* ================================
+   RESPONSIVIDADE
+   ================================ */
+@media (max-width: 768px) {
+  .modal-conteudo {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre-perfil {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .perfil-foto img {
+    margin-bottom: 10px;
+  }
 }
 
 /* ================================
@@ -199,42 +309,4 @@ footer {
   padding: 15px;
   margin-top: 30px;
   font-size: 0.9rem;
-}
-/* ================================
-   SOBRE - PERFIL COM FOTO
-   ================================ */
-
-/* Container da seção com foto e texto */
-.sobre-perfil {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-/* Foto do perfil */
-.perfil-foto img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-
-  /* Borda seguindo o padrão rosa dos cards */
-  border: 4px solid #e8a0bf;
-}
-
-/* Texto do perfil */
-.perfil-texto {
-  flex: 1;
-}
-
-/* Ajuste para telas menores */
-@media (max-width: 600px) {
-  .sobre-perfil {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .perfil-foto img {
-    margin-bottom: 10px;
-  }
 }

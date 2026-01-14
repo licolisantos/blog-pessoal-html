@@ -108,53 +108,116 @@
     </section>
 
     <!-- ============================================
-     SEÇÃO: CONTATO
-     ============================================ -->
-<section>
-  <h2>Contato</h2>
+         SEÇÃO: CONTATO
+         ============================================ -->
+    <section>
+      <h2>Contato</h2>
 
-  <p>
-    Você pode entrar em contato comigo pelos canais abaixo:
-  </p>
+      <p>
+        Você pode entrar em contato comigo pelos canais abaixo
+        ou deixar uma mensagem diretamente pelo site.
+      </p>
 
-  <!-- Botões de contato -->
-  <div class="contato-links">
+      <!-- Botões de contato -->
+      <div class="contato-links">
 
-    <a
-      href="https://www.linkedin.com/in/licoli-santos/"
-      target="_blank"
-      class="contato-btn linkedin"
-    >
-      LinkedIn
-    </a>
+        <a
+          href="https://www.linkedin.com/in/licoli-santos/"
+          target="_blank"
+          class="contato-btn linkedin"
+        >
+          LinkedIn
+        </a>
 
-    <a
-      href="https://github.com/licolisantos"
-      target="_blank"
-      class="contato-btn github"
-    >
-      GitHub
-    </a>
+        <a
+          href="https://github.com/licolisantos"
+          target="_blank"
+          class="contato-btn github"
+        >
+          GitHub
+        </a>
 
-    <a
-      href="https://wa.me/5511999001636"
-      target="_blank"
-      class="contato-btn whatsapp"
-    >
-      WhatsApp
-    </a>
+        <a
+          href="https://wa.me/5511999001636"
+          target="_blank"
+          class="contato-btn whatsapp"
+        >
+          WhatsApp
+        </a>
 
-    <a
-      href="mailto:joaogabriellicoli@gmail.com"
-      class="contato-btn email"
-    >
-      E-mail
-    </a>
+        <a
+          href="mailto:joaogabriellicoli@gmail.com"
+          class="contato-btn email"
+        >
+          E-mail
+        </a>
 
-  </div>
-</section>
+      </div>
+
+      <!-- Botão para abrir o modal -->
+      <button class="contato-btn abrir-modal">
+        Deixe sua mensagem
+      </button>
+    </section>
 
   </main>
+
+  <!-- ============================================
+       MODAL - FORMULÁRIO DE CONTATO
+       ============================================ -->
+  <div class="modal-overlay" id="modalContato">
+
+    <div class="modal">
+
+      <!-- Botão fechar -->
+      <button class="fechar-modal" id="fecharModal">×</button>
+
+      <div class="modal-conteudo">
+
+        <!-- Formulário -->
+        <div class="modal-form">
+          <h2>Deixe sua mensagem</h2>
+
+          <form id="formContato">
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" required placeholder="Digite seu nome">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required placeholder="Digite seu e-mail">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              rows="4"
+              required
+              placeholder="Digite sua mensagem">
+            </textarea>
+
+            <button type="submit" class="contato-btn">
+              Enviar
+            </button>
+
+          </form>
+        </div>
+
+        <!-- Mapa -->
+        <div class="modal-mapa">
+          <p class="endereco">
+            Av. Francisco Morato, 999999<br>
+            Morumbi - SP
+          </p>
+
+          <iframe
+            src="https://www.google.com/maps?q=Av.%20Francisco%20Morato,%20999999%20Morumbi%20SP&output=embed"
+            loading="lazy">
+          </iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
 
   <!-- ============================================
        RODAPÉ
@@ -162,6 +225,9 @@
   <footer>
     <p>© 2026 - Licóli Santos | Blog Pessoal</p>
   </footer>
+
+  <!-- Importação do JavaScript do modal -->
+  <script src="assets/js/modal.js"></script>
 
 </body>
 </html>
