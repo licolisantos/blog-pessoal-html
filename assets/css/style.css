@@ -20,7 +20,6 @@ body {
 
 /* ================================
    CABEÇALHO
-   Azul tech
    ================================ */
 header {
   background-color: #1f3a5f;
@@ -75,8 +74,6 @@ section {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 6px;
-
-  /* detalhe sutil rosa */
   border-top: 4px solid #e8a0bf;
 }
 
@@ -87,7 +84,6 @@ section h2 {
 
 /* ================================
    SEÇÃO TECNOLOGIAS
-   Layout lado a lado
    ================================ */
 .tech-content {
   display: flex;
@@ -143,6 +139,7 @@ li {
   margin-top: 10px;
 }
 
+/* Estilo base */
 .contato-btn {
   padding: 10px 14px;
   border-radius: 6px;
@@ -152,13 +149,16 @@ li {
   color: #ffffff;
   font-weight: bold;
   font-size: 0.95rem;
-  transition: opacity 0.3s ease;
+  background-color: #6b7280;
+  transition: background-color 0.3s ease;
 }
 
+/* Hover padrão */
 .contato-btn:hover {
-  opacity: 0.85;
+  background-color: #4b5563;
 }
 
+/* Variações por canal */
 .contato-btn.linkedin {
   background-color: #0a66c2;
 }
@@ -177,19 +177,18 @@ li {
 
 /* ================================
    BOTÃO "DEIXE SUA MENSAGEM"
-   Estilo neutro e destaque principal
+   Botão principal de ação
    ================================ */
 .btn-mensagem {
-  background-color: #6b7280; /* cinza médio sólido */
-  color: #ffffff;
+  background-color: #9ca3af;
+  color: #1f2937;
   margin-bottom: 15px;
-  opacity: 1;
 }
 
 .btn-mensagem:hover {
-  background-color: #4b5563; /* cinza mais escuro no hover */
+  background-color: #6b7280;
+  color: #ffffff;
 }
-
 
 /* ================================
    SOBRE - PERFIL COM FOTO
@@ -215,8 +214,6 @@ li {
 /* ================================
    MODAL - FORMULÁRIO DE CONTATO
    ================================ */
-
-/* Overlay escuro */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -230,7 +227,6 @@ li {
   z-index: 1000;
 }
 
-/* Caixa do modal */
 .modal {
   background-color: #ffffff;
   width: 90%;
@@ -240,7 +236,6 @@ li {
   position: relative;
 }
 
-/* Botão fechar */
 .fechar-modal {
   position: absolute;
   top: 10px;
@@ -251,13 +246,11 @@ li {
   cursor: pointer;
 }
 
-/* Conteúdo do modal */
 .modal-conteudo {
   display: flex;
   gap: 20px;
 }
 
-/* Formulário */
 .modal-form {
   flex: 1;
 }
@@ -277,7 +270,6 @@ li {
   border: 1px solid #ccc;
 }
 
-/* Mapa */
 .modal-mapa {
   flex: 1;
 }
