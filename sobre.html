@@ -7,7 +7,7 @@
   <!-- Título exibido na aba do navegador -->
   <title>Sobre mim | Licóli Santos</title>
 
-  <!-- Importação do arquivo CSS externo -->
+  <!-- Importação do arquivo CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -35,18 +35,18 @@
   <main>
 
     <!-- ============================================
-         SEÇÃO: QUEM SOU EU (COM FOTO)
+         SEÇÃO: QUEM SOU EU
          ============================================ -->
     <section class="sobre-perfil">
 
-      <!-- Foto de perfil -->
+      <!-- Foto -->
       <div class="perfil-foto">
         <img
           src="assets/img/licoli.png"
           alt="Foto de Licóli Santos">
       </div>
 
-      <!-- Texto do perfil -->
+      <!-- Texto -->
       <div class="perfil-texto">
         <h2>Quem sou eu</h2>
 
@@ -110,7 +110,7 @@
 <!-- ============================================
      SEÇÃO: CONTATO
      ============================================ -->
-<section>
+<section class="secao-contato">
   <h2>Contato</h2>
 
   <p>
@@ -118,53 +118,50 @@
     ou deixar uma mensagem diretamente pelo site.
   </p>
 
-  <!-- Botão principal para abrir o modal -->
-  <button class="contato-btn btn-mensagem abrir-modal">
-    Deixe sua mensagem
-  </button>
+  <!-- Container centralizado dos botões -->
+  <div class="contato-acoes">
 
-  <!-- Botões de contato externos -->
-  <div class="contato-links">
+    <!-- Botão principal -->
+    <button
+      type="button"
+      class="contato-btn btn-mensagem abrir-modal">
+      Deixe sua mensagem
+    </button>
 
-    <a
-      href="https://www.linkedin.com/in/licoli-santos/"
-      target="_blank"
-      class="contato-btn linkedin"
-    >
-      LinkedIn
-    </a>
+    <!-- Links externos -->
+    <div class="contato-links">
 
-    <a
-      href="https://github.com/licolisantos"
-      target="_blank"
-      class="contato-btn github"
-    >
-      GitHub
-    </a>
+      <a
+        href="https://www.linkedin.com/in/licoli-santos/"
+        target="_blank"
+        class="contato-btn linkedin">
+        LinkedIn
+      </a>
 
-    <a
-      href="https://wa.me/5511999001636"
-      target="_blank"
-      class="contato-btn whatsapp"
-    >
-      WhatsApp
-    </a>
+      <a
+        href="https://github.com/licolisantos"
+        target="_blank"
+        class="contato-btn github">
+        GitHub
+      </a>
 
-    <a
-      href="mailto:joaogabriellicoli@gmail.com"
-      class="contato-btn email"
-    >
-      E-mail
-    </a>
+      <a
+        href="https://wa.me/5511999001636"
+        target="_blank"
+        class="contato-btn whatsapp">
+        WhatsApp
+      </a>
+
+      <a
+        href="mailto:joaogabriellicoli@gmail.com"
+        class="contato-btn email">
+        E-mail
+      </a>
+
+    </div>
 
   </div>
 </section>
-
-      <!-- Botão para abrir o modal -->
-      <button class="contato-btn abrir-modal">
-        Deixe sua mensagem
-      </button>
-    </section>
 
   </main>
 
@@ -187,10 +184,18 @@
           <form id="formContato">
 
             <label for="nome">Nome</label>
-            <input type="text" id="nome" required placeholder="Digite seu nome">
+            <input
+              type="text"
+              id="nome"
+              required
+              placeholder="Digite seu nome">
 
             <label for="email">E-mail</label>
-            <input type="email" id="email" required placeholder="Digite seu e-mail">
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="Digite seu e-mail">
 
             <label for="mensagem">Mensagem</label>
             <textarea
@@ -232,8 +237,8 @@
     <p>© 2026 - Licóli Santos | Blog Pessoal</p>
   </footer>
 
-  <!-- Importação do JavaScript do modal -->
+  <!-- JavaScript do modal -->
   <script src="assets/js/modal.js"></script>
 
 </body>
-</html>
+</html> 

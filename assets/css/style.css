@@ -191,6 +191,26 @@ li {
 }
 
 /* ================================
+   SEÇÃO CONTATO - CENTRALIZAÇÃO
+   ================================ */
+.secao-contato {
+  text-align: center;
+}
+
+.contato-acoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Centraliza os botões de redes */
+.contato-links {
+  justify-content: center;
+}
+
+/* ================================
    SOBRE - PERFIL COM FOTO
    ================================ */
 .sobre-perfil {
